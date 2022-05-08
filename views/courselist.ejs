@@ -1,0 +1,54 @@
+<h1>The courses are</h1>
+Here we want a ul list with the instructor, coursenum, title, term
+Here we want a ul list with the clothing item, id, name, category, price, stock
+<hr>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Clothing ID</th> 
+            <th>Clothing Item</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Stock</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+    <% for (item of Clothing) {
+        const clothID = Clothing.id;
+        const clothingItem = Clothing.name;
+        const ctgory = Clothing.category;
+        const cPrice = Clothing.price;
+        const cStock = Clothing.stock;
+         %>
+        
+      <tr class="mb-2"> 
+        <td><%= clothID %></td>
+        <td>
+            <%=  Clothing.name %>
+        </td>
+
+        <td>
+            <%= Clothing.category %>
+        </td>
+        <td>
+
+        </td>
+
+        <td>
+            <%=cPrice%>
+        </td>
+
+        <td>
+            <%Clothing.stock %>
+        </td>
+         <!-- <%= JSON.stringify(course.times) %> <br> -->
+    </tr>
+    <% } %>
+    </tbody>
+</table>
+
+<pre>
+    <!-- 
+        <%= JSON.stringify(courses,null,5) %> 
+    -->
+</pre>
