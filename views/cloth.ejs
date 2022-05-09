@@ -1,0 +1,26 @@
+<div class="bg-light m-5 p-2 border border-primary border-2">
+    <div class="">
+        <span>
+            <%= Clothing.id %> 
+            <%= Clothing.name %> 
+        </span>
+        <strong><%= Clothing.name %></strong>
+        
+    </div>
+    <div class="mb-1">
+        <%= Clothing.category %>
+    </div>
+    <div><a href="/addCourse/<%= course['_id'] %>">(add to schedule)</a></div>
+    <div class="mb-1">
+        <%= Clothing.price %>
+       <br>
+       <%= Clothing.stock %>
+    </div>
+</div>
+
+<hr>
+
+<pre>
+    <%= JSON.stringify(course,null,5) %>
+</pre>
+-->
