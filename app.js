@@ -163,8 +163,6 @@ app.get('/courses/show/:clothesID',
     const {clothesID} = req.params;
     const item = await Course.findOne({id:clothesID})
     res.locals.item = item
-    //res.locals.times2str = times2str
-    //res.json(course)
     res.render('Clothing')
   }
 )
@@ -174,17 +172,15 @@ app.get('/Clothing/byID',
   async (req,res,next) => {
     const userID = req.params.ID;
     const listClothing = await Clothing.find({ID,userID})
-    //res.json(courses)
     res.locals.listClothing = listClothing
     res.render('clotheslist')
   } 
 )
 app.get('/Clothing/byCategory',
-  // show a list of all courses taught by a given faculty
+  // show a list of all clothing by category
   async (req,res,next) => {
     const userCategory = req.params.category;
     const listClothing = await Course.find({category,userCategory})
-    //res.json(courses)
     res.locals.listClothing = listClothing
     res.render('clotheslist')
   } 
