@@ -16,5 +16,7 @@ clotheslist.ejs shows all the clothes in full display as a table with the above 
 
 app.js helps run the data from the previous ejs and json files into a executable website to be displayed for a user. 
 
+Zoom Link: https://www.youtube.com/watch?v=7eiDWuD26Yk
+
 
 
